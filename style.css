@@ -17,6 +17,14 @@ section {
   box-shadow: 5px 5px 10px rgb(24, 27, 31);
 }
 
+.bt {
+  color: rgb(10, 10, 10);
+  background-color: rgb(231, 242, 252);
+  border-radius: 5px;
+  box-shadow: 5px 5px 10px rgb(10, 10, 10);
+  padding: auto;
+}
+
 footer {
   color: white;
   text-align: center;

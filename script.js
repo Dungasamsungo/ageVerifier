@@ -16,38 +16,42 @@ function verify(){
             gender = 'Male'
             if(yage >= 0 && yage < 8){
                 //infant
-                img.setAttribute('src' ,'photo_baby_m.png')
+                img.setAttribute('src' ,'baby.m.png')
             }else if(yage < 12){
                 //Child
-                img.setAttribute('src' ,'photo_8yrs_m.png')
+                img.setAttribute('src' ,'8yrs.m.png')
             }else if (yage < 20){
                  //teen
-                 img.setAttribute('src' ,'photo_teen_png')
+                 img.setAttribute('src' ,'teen.m.png')
             }else if (yage < 50){
                 //adult
-                img.setAttribute('src' ,'photo_adult_m.png')
+                img.setAttribute('src' ,'adult.m.png')
             }else{
                 //elderly
-                img.setAttribute('src' ,'photo_elderly_m.png')
+                img.setAttribute('src' ,'elderly.m.png')
             }
             
         }else if (ysex[1].checked){
             gender = 'Female'
             if(yage >= 0 && yage < 8){
                 //infant
+                img.setAttribute('src', 'baby.f.png')
             }else if(yage < 12){
                 //Child
-            
+                img.setAttribute('src', '8yrs.f.png')
             }else if (yage < 20){
                  //teen
+                 img.setAttribute('src', 'teen.f.png')
             }else if (yage < 50){
                 //adult
+                img.setAttribute('src', 'adult.f.png')
             }else{
                 //elderly
+                img.setAttribute('src', 'elderly.f.png')
             }
         }
         res.style.textAlign = 'center'
-        res.innerHTML =`Detected ${gender} aged ${yage}`
+        res.innerHTML =`Dictected ${gender} aged ${yage}`
         res.appendChild(img)
 
     }
